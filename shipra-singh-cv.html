@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shipra Singh — Forest Ecosystem Ecologist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300..600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Art direction: Forest ecosystem ecologist — Himalayan field science
+   Palette: deep forest ink, warm parchment, moss accent
+   Typography: Spectral (display serif, journal feel) + Inter (body, precise)
+   Density: generous — academic editorial
+   ============================================================ */
+:root, [data-theme="light"] {
+  --color-bg:             #f5f3ee;
+  --color-surface:        #f8f6f1;
+  --color-surface-2:      #faf9f6;
+  --color-surface-offset: #ede9e0;
+  --color-surface-offset-2: #e4dfd4;
+  --color-divider:        #d5d0c5;
+  --color-border:         #ccc8bc;
+  --color-text:           #1e2218;
+  --color-text-muted:     #5a5c4e;
+  --color-text-faint:     #9a9b8e;
+  --color-text-inverse:   #f5f3ee;
+  --color-primary:        #1f4a2c;
+  --color-primary-hover:  #163620;
+  --color-primary-active: #0e2414;
+  --color-primary-highlight: #c8d9ca;
+  --color-gold:           #8a6a1e;
+  --color-gold-light:     #f0e8ce;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 3px oklch(0.2 0.03 130 / 0.07);
+  --shadow-md: 0 4px 14px oklch(0.2 0.03 130 / 0.09);
+  --shadow-lg: 0 12px 36px oklch(0.2 0.03 130 / 0.13);
+  --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --font-display: 'Spectral', Georgia, serif;
+  --font-body: 'Inter', 'Helvetica Neue', sans-serif;
+  --text-xs:   clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+  --text-hero: clamp(2.5rem, 1rem + 5vw, 5.5rem);
+  --space-1:0.25rem;--space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;
+  --space-5:1.25rem;--space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;
+  --space-12:3rem;--space-16:4rem;--space-20:5rem;--space-24:6rem;
+  --content-narrow:640px;--content-default:960px;--content-wide:1180px;
+}
+[data-theme="dark"] {
+  --color-bg:             #151a12;
+  --color-surface:        #1a1f16;
+  --color-surface-2:      #1f251a;
+  --color-surface-offset: #1d2219;
+  --color-surface-offset-2:#232820;
+  --color-divider:        #2a2f25;
+  --color-border:         #343930;
+  --color-text:           #d0cebc;
+  --color-text-muted:     #7a7d6e;
+  --color-text-faint:     #535649;
+  --color-text-inverse:   #1a1f16;
+  --color-primary:        #6daa7a;
+  --color-primary-hover:  #4e8f5e;
+  --color-primary-active: #347344;
+  --color-primary-highlight: #233329;
+  --color-gold:           #c9a84c;
+  --color-gold-light:     #2e2915;
+  --shadow-sm: 0 1px 3px oklch(0 0 0 / 0.25);
+  --shadow-md: 0 4px 14px oklch(0 0 0 / 0.35);
+  --shadow-lg: 0 12px 36px oklch(0 0 0 / 0.45);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-bg:#151a12;--color-surface:#1a1f16;--color-surface-2:#1f251a;
+    --color-surface-offset:#1d2219;--color-surface-offset-2:#232820;
+    --color-divider:#2a2f25;--color-border:#343930;--color-text:#d0cebc;
+    --color-text-muted:#7a7d6e;--color-text-faint:#535649;--color-text-inverse:#1a1f16;
+    --color-primary:#6daa7a;--color-primary-hover:#4e8f5e;--color-primary-active:#347344;
+    --color-primary-highlight:#233329;--color-gold:#c9a84c;--color-gold-light:#2e2915;
+    --shadow-sm:0 1px 3px oklch(0 0 0 / 0.25);--shadow-md:0 4px 14px oklch(0 0 0 / 0.35);
+    --shadow-lg:0 12px 36px oklch(0 0 0 / 0.45);
+  }
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:var(--space-16)}
+body{min-height:100dvh;line-height:1.65;font-family:var(--font-body);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg)}
+img,svg{display:block;max-width:100%;height:auto}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.15;font-family:var(--font-display)}
+p,li{text-wrap:pretty;max-width:72ch}
+a,button,[role="button"]{transition:color var(--transition),background var(--transition),border-color var(--transition),box-shadow var(--transition)}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+::selection{background:oklch(from var(--color-primary) l c h / 0.2);color:var(--color-text)}
+:focus-visible{outline:2px solid var(--color-primary);outline-offset:3px;border-radius:var(--radius-sm)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+.container{max-width:var(--content-default);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12))}
+.container--wide{max-width:var(--content-wide);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12))}
+
+/* ── SKIP LINK ── */
+.skip-link{position:absolute;top:-100%;left:var(--space-4);padding:var(--space-2) var(--space-4);background:var(--color-primary);color:var(--color-text-inverse);border-radius:var(--radius-md);font-size:var(--text-sm);font-weight:600;z-index:999}
+.skip-link:focus{top:var(--space-4)}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:100;background:oklch(from var(--color-bg) l c h / 0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--color-divider)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:3.5rem;gap:var(--space-6)}
+.nav-logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
+.nav-logo svg{flex-shrink:0;color:var(--color-primary)}
+.nav-name{font-family:var(--font-display);font-size:var(--text-sm);font-weight:500;letter-spacing:0.01em}
+.nav-links{display:flex;align-items:center;gap:var(--space-6);list-style:none}
+.nav-links a{font-size:var(--text-sm);color:var(--color-text-muted);text-decoration:none;font-weight:400}
+.nav-links a:hover{color:var(--color-primary)}
+.nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+.btn-theme{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:var(--radius-full);color:var(--color-text-muted)}
+.btn-theme:hover{background:var(--color-surface-offset);color:var(--color-text)}
+.nav-menu-btn{display:none;width:36px;height:36px;align-items:center;justify-content:center;border-radius:var(--radius-md);color:var(--color-text-muted)}
+.nav-menu-btn:hover{background:var(--color-surface-offset)}
+@media(max-width:680px){.nav-links{display:none}.nav-menu-btn{display:flex}}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:min(90vh,640px);display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:var(--color-primary)}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%;opacity:0.72}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,oklch(0.14 0.04 135 / 0.95) 0%,oklch(0.14 0.04 135 / 0.55) 50%,transparent 100%)}
+.hero-content{position:relative;z-index:2;padding-block:clamp(var(--space-12),8vw,var(--space-24));width:100%}
+.hero-eyebrow{font-family:var(--font-body);font-size:var(--text-xs);font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:oklch(from var(--color-primary) 0.85 0.08 135);margin-bottom:var(--space-4)}
+.hero-name{font-family:var(--font-display);font-size:var(--text-hero);font-weight:300;color:#fff;line-height:1.05;margin-bottom:var(--space-5)}
+.hero-name em{font-style:italic;font-weight:300}
+.hero-role{font-family:var(--font-body);font-size:var(--text-lg);font-weight:300;color:oklch(from white l c h / 0.78);margin-bottom:var(--space-8);max-width:55ch}
+.hero-tags{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.hero-tag{font-size:var(--text-xs);font-weight:500;padding:0.3em 0.85em;border:1px solid oklch(from white l c h / 0.3);border-radius:var(--radius-full);color:oklch(from white l c h / 0.85);letter-spacing:0.04em}
+.hero-meta{display:flex;align-items:center;gap:var(--space-6);flex-wrap:wrap;margin-top:var(--space-8)}
+.hero-meta-item{display:flex;align-items:center;gap:var(--space-2);color:oklch(from white l c h / 0.7);font-size:var(--text-sm)}
+.hero-meta-item svg{opacity:0.7;flex-shrink:0}
+.hero-meta-item a{color:inherit;text-decoration:none}
+.hero-meta-item a:hover{color:white}
+
+/* ── STATS BAR ── */
+.stats-bar{background:var(--color-primary);color:var(--color-text-inverse)}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);divide-x:1px solid oklch(from white l c h / 0.15)}
+.stat-item{padding:var(--space-6) var(--space-8);text-align:center;border-right:1px solid oklch(from white l c h / 0.15)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:var(--font-display);font-size:var(--text-xl);font-weight:500;line-height:1;display:block;margin-bottom:var(--space-1)}
+.stat-label{font-size:var(--text-xs);opacity:0.7;letter-spacing:0.06em;text-transform:uppercase;font-weight:500}
+@media(max-width:600px){.stats-inner{grid-template-columns:repeat(2,1fr)}.stat-item{border-right:none;border-bottom:1px solid oklch(from white l c h / 0.15)}.stat-item:nth-child(2n){border-right:none}.stat-item:nth-last-child(-n+2){border-bottom:none}}
+
+/* ── SECTION BASICS ── */
+.section{padding-block:clamp(var(--space-12),7vw,var(--space-24))}
+.section-alt{background:var(--color-surface)}
+.section-eyebrow{font-family:var(--font-body);font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-gold);margin-bottom:var(--space-3)}
+.section-title{font-family:var(--font-display);font-size:var(--text-xl);font-weight:400;color:var(--color-text);margin-bottom:var(--space-6);line-height:1.2}
+.section-body{font-size:var(--text-base);color:var(--color-text-muted);max-width:62ch;line-height:1.75}
+.divider{height:1px;background:var(--color-divider);margin-block:var(--space-6)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(var(--space-8),5vw,var(--space-16));align-items:start;margin-top:var(--space-10)}
+.about-portrait-wrap{position:relative}
+.about-portrait{width:100%;aspect-ratio:3/4;background:var(--color-surface-offset);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg)}
+.about-portrait img{width:100%;height:100%;object-fit:cover}
+.about-portrait-placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--space-3);color:var(--color-text-faint);font-size:var(--text-sm);text-align:center;padding:var(--space-6)}
+.about-affiliation{margin-top:var(--space-4);padding:var(--space-4);background:var(--color-primary-highlight);border-radius:var(--radius-md);font-size:var(--text-sm);color:var(--color-primary)}
+[data-theme="dark"] .about-affiliation{background:var(--color-primary-highlight);color:#8ac99a}
+.about-interests{margin-top:var(--space-8)}
+.about-interests h3{font-family:var(--font-display);font-size:var(--text-lg);font-weight:400;margin-bottom:var(--space-4)}
+.interest-tags{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+.interest-tag{font-size:var(--text-xs);font-weight:500;padding:0.3em 0.9em;border:1px solid var(--color-border);border-radius:var(--radius-full);color:var(--color-text-muted);background:var(--color-surface)}
+.about-orcid{display:inline-flex;align-items:center;gap:var(--space-2);font-size:var(--text-sm);color:var(--color-primary);text-decoration:none;margin-top:var(--space-4);font-weight:500}
+.about-orcid:hover{color:var(--color-primary-hover)}
+@media(max-width:680px){.about-grid{grid-template-columns:1fr}.about-portrait{aspect-ratio:4/3}}
+
+/* ── RESEARCH / DIAGRAM section ── */
+.research-intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(var(--space-8),4vw,var(--space-16));margin-top:var(--space-10);align-items:start}
+.research-text p{font-size:var(--text-base);color:var(--color-text-muted);line-height:1.75;margin-bottom:var(--space-4)}
+.research-text p:last-child{margin-bottom:0}
+.figure-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
+.figure-card:hover{box-shadow:var(--shadow-md)}
+.figure-card-body{padding:var(--space-5)}
+.figure-caption{font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);line-height:1.5}
+.figure-caption strong{color:var(--color-text-muted)}
+.figure-source{font-size:var(--text-xs);color:var(--color-text-faint);font-style:italic;margin-top:var(--space-1)}
+.figures-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-6);margin-top:var(--space-10)}
+@media(max-width:680px){.research-intro{grid-template-columns:1fr}.figures-grid{grid-template-columns:1fr}}
+
+/* ── PUBLICATIONS ── */
+.pub-list{margin-top:var(--space-8);display:flex;flex-direction:column;gap:0}
+.pub-year-group{margin-bottom:var(--space-8)}
+.pub-year{font-family:var(--font-display);font-size:var(--text-xl);font-weight:300;color:var(--color-text-faint);margin-bottom:var(--space-4);line-height:1}
+.pub-item{padding:var(--space-5) 0;border-bottom:1px solid var(--color-divider);display:grid;grid-template-columns:auto 1fr;gap:var(--space-4)}
+.pub-item:last-child{border-bottom:none}
+.pub-type{font-size:var(--text-xs);font-weight:600;letter-spacing:0.07em;text-transform:uppercase;padding:0.25em 0.7em;border-radius:var(--radius-full);white-space:nowrap;height:fit-content;margin-top:0.2em}
+.pub-type--article{background:var(--color-primary-highlight);color:var(--color-primary)}
+[data-theme="dark"] .pub-type--article{background:var(--color-primary-highlight);color:#8ac99a}
+.pub-type--chapter{background:var(--color-gold-light);color:var(--color-gold)}
+.pub-type--book{background:var(--color-surface-offset);color:var(--color-text-muted)}
+.pub-title{font-family:var(--font-display);font-size:var(--text-base);font-weight:400;color:var(--color-text);font-style:italic;margin-bottom:var(--space-1);line-height:1.4}
+.pub-meta{font-size:var(--text-sm);color:var(--color-text-muted)}
+.pub-journal{color:var(--color-primary);font-weight:500}
+
+/* ── METHODS STRIP ── */
+.methods-strip{background:var(--color-primary);color:var(--color-text-inverse);padding-block:clamp(var(--space-10),6vw,var(--space-16))}
+.methods-strip .section-eyebrow{color:oklch(from white l c h / 0.55)}
+.methods-strip .section-title{color:white}
+.methods-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:var(--space-4);margin-top:var(--space-8)}
+.method-card{background:oklch(from white l c h / 0.07);border:1px solid oklch(from white l c h / 0.12);border-radius:var(--radius-lg);padding:var(--space-5)}
+.method-card:hover{background:oklch(from white l c h / 0.11)}
+.method-icon{width:32px;height:32px;margin-bottom:var(--space-3);color:oklch(from white l c h / 0.7)}
+.method-name{font-weight:600;font-size:var(--text-sm);margin-bottom:var(--space-1);color:white}
+.method-desc{font-size:var(--text-xs);opacity:0.65;line-height:1.5}
+
+/* ── EXPERIENCE TIMELINE ── */
+.timeline{position:relative;margin-top:var(--space-8)}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--color-divider)}
+.tl-item{position:relative;padding-left:var(--space-8);margin-bottom:var(--space-8)}
+.tl-item::before{content:'';position:absolute;left:-5px;top:0.45em;width:12px;height:12px;border-radius:50%;background:var(--color-primary);border:2px solid var(--color-bg)}
+.tl-period{font-size:var(--text-xs);font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--color-gold);margin-bottom:var(--space-2)}
+.tl-role{font-family:var(--font-display);font-size:var(--text-lg);font-weight:400;color:var(--color-text);margin-bottom:var(--space-1);line-height:1.2}
+.tl-org{font-size:var(--text-sm);font-weight:500;color:var(--color-primary);margin-bottom:var(--space-2)}
+.tl-desc{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.7;max-width:58ch}
+
+/* ── EDUCATION ── */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-5);margin-top:var(--space-8)}
+.edu-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6);box-shadow:var(--shadow-sm)}
+.edu-card:hover{box-shadow:var(--shadow-md)}
+.edu-degree{font-family:var(--font-display);font-size:var(--text-base);font-weight:500;color:var(--color-text);margin-bottom:var(--space-1)}
+.edu-period{font-size:var(--text-xs);font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--color-gold);margin-bottom:var(--space-2)}
+.edu-inst{font-size:var(--text-sm);color:var(--color-primary);font-weight:500;margin-bottom:var(--space-2)}
+.edu-diss{font-size:var(--text-sm);color:var(--color-text-muted);font-style:italic;line-height:1.5}
+.edu-supervisors{font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2)}
+@media(max-width:600px){.edu-grid{grid-template-columns:1fr}}
+
+/* ── AWARDS ── */
+.awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin-top:var(--space-8)}
+.award-item{padding:var(--space-4) var(--space-5);background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);display:flex;gap:var(--space-3);align-items:flex-start}
+.award-item:hover{box-shadow:var(--shadow-sm)}
+.award-icon{width:20px;height:20px;flex-shrink:0;margin-top:0.15em;color:var(--color-gold)}
+.award-text{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.55}
+.award-text strong{color:var(--color-text);font-weight:500;display:block}
+@media(max-width:600px){.awards-grid{grid-template-columns:1fr}}
+
+/* ── CONTACT / REFERENCES ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-8);margin-top:var(--space-10)}
+.contact-links{display:flex;flex-direction:column;gap:var(--space-3)}
+.contact-link{display:flex;align-items:center;gap:var(--space-3);font-size:var(--text-sm);color:var(--color-text-muted);text-decoration:none}
+.contact-link:hover{color:var(--color-primary)}
+.contact-link svg{color:var(--color-primary);flex-shrink:0}
+.ref-list{display:flex;flex-direction:column;gap:var(--space-4);margin-top:var(--space-6)}
+.ref-item{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6}
+.ref-name{font-weight:600;color:var(--color-text);display:block}
+.ref-title{color:var(--color-text-muted)}
+.ref-email{color:var(--color-primary);font-family:var(--font-body)}
+@media(max-width:600px){.contact-grid{grid-template-columns:1fr}}
+
+/* ── FOOTER ── */
+footer{background:var(--color-surface-offset);border-top:1px solid var(--color-divider);padding-block:var(--space-8)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4)}
+.footer-copy{font-size:var(--text-xs);color:var(--color-text-faint)}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 0.55s ease,transform 0.55s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ── MOBILE NAV MENU ── */
+.nav-mobile-menu{display:none;position:fixed;top:3.5rem;left:0;right:0;background:var(--color-surface);border-bottom:1px solid var(--color-divider);padding:var(--space-4);z-index:99;flex-direction:column;gap:var(--space-2)}
+.nav-mobile-menu.open{display:flex}
+.nav-mobile-menu a{font-size:var(--text-base);color:var(--color-text-muted);text-decoration:none;padding:var(--space-2) var(--space-3);border-radius:var(--radius-md)}
+.nav-mobile-menu a:hover{background:var(--color-surface-offset);color:var(--color-primary)}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Shipra Singh home">
+        <svg aria-hidden="true" width="28" height="28" viewBox="0 0 28 28" fill="none">
+          <path d="M14 3 C8 3 4 8 4 13 C4 18 7 21 11 22 L11 25 L17 25 L17 22 C21 21 24 18 24 13 C24 8 20 3 14 3Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M10 13 Q14 8 18 13 Q14 18 10 13Z" fill="currentColor" opacity="0.6"/>
+          <line x1="14" y1="22" x2="14" y2="25" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M7 10 Q10 6 14 5" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+        <span class="nav-name">Shipra Singh</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-theme" data-theme-toggle aria-label="Switch to dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="nav-menu-btn" aria-label="Open menu" id="menuBtn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+    <a href="#about" class="mobile-close">About</a>
+    <a href="#research" class="mobile-close">Research</a>
+    <a href="#publications" class="mobile-close">Publications</a>
+    <a href="#experience" class="mobile-close">Experience</a>
+    <a href="#contact" class="mobile-close">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-bg">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/seedream_images/82ca2b02-7028-4265-b59e-bc4761243d8e.png"
+         alt="Western Himalayan temperate forest at dusk, dense canopy over steep slopes with snow-capped peaks in the distance"
+         width="1920" height="1080" loading="eager" decoding="async">
+  </div>
+  <div class="container hero-content">
+    <p class="hero-eyebrow">Forest Ecosystem Ecologist · IIASA Postdoctoral Fellow</p>
+    <h1 class="hero-name">Shipra<br><em>Singh</em></h1>
+    <p class="hero-role">Decoding ecosystem services along environmental gradients in the Himalayas — linking plant functional traits, soil processes, and biodiversity to forest ecosystem function.</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Ecosystem Services</span>
+      <span class="hero-tag">Plant Functional Traits</span>
+      <span class="hero-tag">Himalayan Forest Ecology</span>
+      <span class="hero-tag">Trait-Based Modelling</span>
+      <span class="hero-tag">Soil Microbial Diversity</span>
+      <span class="hero-tag">Conservation Ecology</span>
+    </div>
+    <div class="hero-meta">
+      <span class="hero-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        IIASA, Laxenburg, Austria
+      </span>
+      <span class="hero-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v5"/><path d="M15 4v5"/></svg>
+        IIASA Postdoctoral Fellow 2023–present
+      </span>
+      <a href="mailto:singhs@iiasa.ac.at" class="hero-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        singhs@iiasa.ac.at
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar" role="region" aria-label="Research statistics">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num">7+</span>
+        <span class="stat-label">Journal Articles</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">2</span>
+        <span class="stat-label">Book Chapters</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">1</span>
+        <span class="stat-label">Edited Volume</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Grants &amp; Awards</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Biography</p>
+    <h2 class="section-title reveal" id="about-title">About</h2>
+    <div class="about-grid">
+      <div class="about-portrait-wrap reveal">
+        <div class="about-portrait">
+          <div class="about-portrait-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.58-7 8-7s8 3 8 7"/></svg>
+            <span>Portrait<br>photograph here</span>
+          </div>
+        </div>
+        <div class="about-affiliation">
+          <strong>Current affiliation:</strong> IIASA Postdoctoral Fellow, International Institute for Applied Systems Analysis, Laxenburg, Austria.<br>
+          <span style="margin-top:0.4em;display:block">Working with Jaideep Joshi &amp; Florian Hofhansl on forest ecosystem services along Himalayan environmental gradients.</span>
+        </div>
+        <a href="https://orcid.org/0000-0001-9317-8286" target="_blank" rel="noopener noreferrer" class="about-orcid">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.8 4.8c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm-.6 2.8h1.2v9.8H7.2V7.6zm4 0h3.4c3.1 0 4.5 2.2 4.5 4.9 0 2.7-1.5 4.9-4.7 4.9h-3.2V7.6zm1.2 1.1v7.6h2c2.2 0 3.3-1.5 3.3-3.8S16.7 8.7 14.4 8.7h-2z"/></svg>
+          ORCID 0000-0001-9317-8286
+        </a>
+      </div>
+      <div class="reveal">
+        <p class="section-body">
+          I am a postdoctoral ecologist specialising in forest ecosystem services and plant functional ecology in the Western Himalayas. My current work at IIASA focuses on understanding how forest ecosystem services respond to environmental gradients and management scenarios across altitudinal and climatic ranges in the Himalayas — integrating field data, trait-based modelling, and ecosystem service frameworks.
+        </p>
+        <p class="section-body" style="margin-top:var(--space-4)">
+          My doctoral research at Jawaharlal Nehru University examined how plant functional traits and soil microbial communities respond to disturbance intensity, slope aspect, and elevation in Western Himalayan temperate forests. I combine phytosociological field surveys with multivariate ordination, metagenomics, and process-based vegetation modelling (Plant-FATE).
+        </p>
+        <p class="section-body" style="margin-top:var(--space-4)">
+          I am fluent in R, Python, ArcGIS, and QGIS, and have contributed to international fieldwork, the BES and AGU meetings, and the Ecosystem Services Partnership Conference 2024 in Wageningen.
+        </p>
+        <div class="about-interests">
+          <h3>Research Interests</h3>
+          <div class="interest-tags">
+            <span class="interest-tag">Ecosystem functions &amp; services</span>
+            <span class="interest-tag">Plant functional traits</span>
+            <span class="interest-tag">Plant–soil interactions</span>
+            <span class="interest-tag">Trait-based modelling</span>
+            <span class="interest-tag">Forest disturbance ecology</span>
+            <span class="interest-tag">Himalayan biodiversity</span>
+            <span class="interest-tag">Plant invasion ecology</span>
+            <span class="interest-tag">Restoration ecology</span>
+            <span class="interest-tag">Soil microbial diversity</span>
+            <span class="interest-tag">Remote sensing &amp; GIS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH + DIAGRAMS -->
+<section id="research" class="section section-alt" aria-labelledby="research-title">
+  <div class="container--wide">
+    <p class="section-eyebrow reveal">Current work &amp; published findings</p>
+    <h2 class="section-title reveal" id="research-title">Research</h2>
+    <div class="research-intro">
+      <div class="research-text reveal">
+        <p>My current IIASA project asks: <em>How do forest ecosystem services respond to environmental gradients and management scenarios in the Himalayas?</em> This involves decomposing management-based scenarios and identifying conservation priorities across elevational, climatic, and disturbance gradients.</p>
+        <p>My doctoral work established that low-to-moderate disturbance intensity does not significantly alter species composition or functional traits in Western Himalayan temperate forests, but crown cover (CC) and specific leaf area (SLA) shift with disturbance — indicating a trade-off between conservative and acquisitive resource strategies.</p>
+        <p>In my latest <em>Ecological Indicators</em> (2025) paper, structural equation modelling reveals that evergreen shrub traits are tightly constrained by topography and stand canopy cover, while deciduous traits respond more indirectly via vegetation and soil feedback loops — explaining 63% of vegetation structure and 50% of trait variation across 1500–3000 m asl.</p>
+      </div>
+
+      <!-- FIGURE 1: PCA biplot — Singh & Verma, Ecological Indicators 2025, Fig 4 -->
+      <!-- Deciduous (orange) vs Evergreen (green) trait space with vectors -->
+      <div class="figure-card reveal">
+        <svg viewBox="0 0 400 290" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="PCA biplot showing functional trait space of dominant shrub species grouped by deciduous and evergreen functional types, with trait vectors"
+             style="width:100%;background:var(--color-surface-2);border-radius:var(--radius-md) var(--radius-md) 0 0;padding:4px">
+          <defs>
+            <marker id="arr1" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+              <polygon points="0 0, 7 2.5, 0 5" fill="#6b6b6b" opacity="0.8"/>
+            </marker>
+            <style>
+              .pca-ax{stroke:#ccc;stroke-width:0.8}
+              .pca-lbl{font:9px/1.3 'Satoshi','Inter',sans-serif;fill:#666}
+              .pca-ttl{font:10.5px/1.3 'Zodiak','Georgia',serif;fill:#28251d;font-style:italic}
+              .pca-vec{stroke:#6b6b6b;stroke-width:1.1;marker-end:url(#arr1)}
+              .pca-vl{font:7.5px 'Satoshi','Inter',sans-serif;fill:#555}
+              .ell-d{fill:rgba(209,103,0,0.10);stroke:#da7101;stroke-width:1.2;stroke-dasharray:4 2}
+              .ell-e{fill:rgba(67,122,34,0.10);stroke:#437a22;stroke-width:1.2;stroke-dasharray:4 2}
+            </style>
+          </defs>
+          <!-- Title -->
+          <text x="200" y="17" text-anchor="middle" class="pca-ttl">PCA: Functional Trait Space by Shrub Type</text>
+          <!-- Sub-note -->
+          <text x="200" y="28" text-anchor="middle" class="pca-lbl" font-size="7.5">PC1 + PC2 explain 39.8% of total trait variance · Singh &amp; Verma (Ecol. Ind. 2025, Fig. 4)</text>
+          <!-- Axes -->
+          <line x1="45" y1="160" x2="375" y2="160" class="pca-ax"/>
+          <line x1="210" y1="38" x2="210" y2="262" class="pca-ax"/>
+          <!-- Zero-line cross-hairs (dashed) -->
+          <line x1="45" y1="160" x2="375" y2="160" stroke="#ddd" stroke-width="0.6" stroke-dasharray="4 3"/>
+          <line x1="210" y1="38" x2="210" y2="262" stroke="#ddd" stroke-width="0.6" stroke-dasharray="4 3"/>
+          <!-- Axis labels -->
+          <text x="210" y="278" text-anchor="middle" class="pca-lbl" font-weight="600">PC1 (24.9%)</text>
+          <text x="13" y="162" transform="rotate(-90 13 162)" text-anchor="middle" class="pca-lbl" font-weight="600">PC2 (14.9%)</text>
+          <!-- Tick marks -->
+          <line x1="130" y1="157" x2="130" y2="163" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="290" y1="157" x2="290" y2="163" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="207" y1="100" x2="213" y2="100" stroke="#bbb" stroke-width="0.8"/>
+          <line x1="207" y1="220" x2="213" y2="220" stroke="#bbb" stroke-width="0.8"/>
+
+          <!-- DECIDUOUS CLUSTER (orange) — SLA, LPC, LNC, LKC, CC, HT upper-right quadrant -->
+          <ellipse cx="278" cy="122" rx="65" ry="45" class="ell-d"/>
+          <!-- Deciduous species points -->
+          <circle cx="262" cy="115" r="3.5" fill="#da7101" opacity="0.85"/>
+          <text x="266" y="111" class="pca-vl" fill="#da7101">P. utilis</text>
+          <circle cx="285" cy="128" r="3.5" fill="#da7101" opacity="0.85"/>
+          <text x="289" y="125" class="pca-vl" fill="#da7101">C. bacillaris</text>
+          <circle cx="270" cy="142" r="3.5" fill="#da7101" opacity="0.85"/>
+          <text x="274" y="138" class="pca-vl" fill="#da7101">R. ellipticus</text>
+
+          <!-- EVERGREEN CLUSTER (green) — LDMC, LT, LA, LRWC, Leaf pH lower-left quadrant -->
+          <ellipse cx="148" cy="195" rx="68" ry="42" class="ell-e"/>
+          <!-- Evergreen species points -->
+          <circle cx="142" cy="188" r="3.5" fill="#437a22" opacity="0.85"/>
+          <text x="102" y="185" class="pca-vl" fill="#437a22">S. saligna</text>
+          <circle cx="158" cy="200" r="3.5" fill="#437a22" opacity="0.85"/>
+          <text x="113" y="200" class="pca-vl" fill="#437a22">B. aristata</text>
+          <circle cx="148" cy="213" r="3.5" fill="#437a22" opacity="0.85"/>
+          <text x="104" y="213" class="pca-vl" fill="#437a22">D. papyraceae</text>
+
+          <!-- Trait VECTORS — acquisitive (pointing toward deciduous quadrant) -->
+          <!-- SLA vector -->
+          <line x1="210" y1="160" x2="295" y2="108" class="pca-vec"/>
+          <text x="298" y="105" class="pca-vl" font-weight="600">SLA</text>
+          <!-- LPC vector -->
+          <line x1="210" y1="160" x2="318" y2="130" class="pca-vec"/>
+          <text x="321" y="128" class="pca-vl" font-weight="600">LPC</text>
+          <!-- LNC vector -->
+          <line x1="210" y1="160" x2="305" y2="145" class="pca-vec"/>
+          <text x="308" y="143" class="pca-vl" font-weight="600">LNC</text>
+          <!-- LKC vector -->
+          <line x1="210" y1="160" x2="310" y2="118" class="pca-vec"/>
+          <text x="313" y="116" class="pca-vl" font-weight="600">LKC</text>
+          <!-- HT vector -->
+          <line x1="210" y1="160" x2="285" y2="95" class="pca-vec"/>
+          <text x="276" y="91" class="pca-vl" font-weight="600">HT</text>
+          <!-- CC vector (near HT) -->
+          <line x1="210" y1="160" x2="272" y2="88" class="pca-vec" stroke-dasharray="3 2"/>
+          <text x="261" y="84" class="pca-vl" font-weight="600">CC</text>
+
+          <!-- Conservative trait vectors (pointing toward evergreen quadrant) -->
+          <!-- LDMC vector -->
+          <line x1="210" y1="160" x2="118" y2="208" class="pca-vec"/>
+          <text x="75" y="209" class="pca-vl" font-weight="600">LDMC</text>
+          <!-- LT vector -->
+          <line x1="210" y1="160" x2="112" y2="218" class="pca-vec"/>
+          <text x="70" y="220" class="pca-vl" font-weight="600">LT</text>
+          <!-- LA vector -->
+          <line x1="210" y1="160" x2="130" y2="225" class="pca-vec"/>
+          <text x="88" y="228" class="pca-vl" font-weight="600">LA</text>
+          <!-- LRWC vector -->
+          <line x1="210" y1="160" x2="125" y2="198" class="pca-vec" stroke-dasharray="3 2"/>
+          <text x="78" y="198" class="pca-vl" font-weight="600">LRWC</text>
+          <!-- Leaf pH -->
+          <line x1="210" y1="160" x2="140" y2="235" class="pca-vec" stroke-dasharray="3 2"/>
+          <text x="96" y="238" class="pca-vl" font-weight="600">Leaf pH</text>
+
+          <!-- Legend -->
+          <rect x="48" y="40" width="10" height="10" fill="#da7101" opacity="0.8" rx="2"/>
+          <text x="61" y="49" class="pca-vl" fill="#da7101" font-weight="600">Deciduous (acquisitive)</text>
+          <rect x="48" y="56" width="10" height="10" fill="#437a22" opacity="0.8" rx="2"/>
+          <text x="61" y="65" class="pca-vl" fill="#437a22" font-weight="600">Evergreen (conservative)</text>
+          <line x1="48" y1="75" x2="63" y2="75" stroke="#6b6b6b" stroke-width="1.1" marker-end="url(#arr1)"/>
+          <text x="66" y="78" class="pca-vl">Trait vector</text>
+          <line x1="130" y1="75" x2="145" y2="75" stroke="#6b6b6b" stroke-width="1.1" stroke-dasharray="3 2" marker-end="url(#arr1)"/>
+          <text x="148" y="78" class="pca-vl">Weaker loading</text>
+          <ellipse cx="224" cy="76" rx="18" ry="7" fill="none" stroke="#da7101" stroke-width="1" stroke-dasharray="3 2"/>
+          <text x="245" y="79" class="pca-vl">95% CI ellipse</text>
+        </svg>
+        <div class="figure-card-body">
+          <p class="figure-caption"><strong>Figure 1.</strong> PCA biplot of twelve plant functional traits for six dominant shrub species, coloured by functional type (deciduous: orange; evergreen: green). Deciduous species cluster around acquisitive traits (SLA, LPC, LNC, LKC, HT, CC); evergreens align with conservative traits (LDMC, LT, LA, LRWC, Leaf pH). PC1 + PC2 explain 39.8% of total trait variance. Ellipses show 95% confidence intervals.</p>
+          <p class="figure-source">After Singh &amp; Verma (2025). <em>Ecological Indicators</em>, 178, 114000. Fig. 4.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row: SEM + Violin plots -->
+    <div class="figures-grid">
+
+      <!-- FIGURE 2: SEM path diagram — Singh & Verma, Ecological Indicators 2025, Fig 5 -->
+      <div class="figure-card reveal">
+        <svg viewBox="0 0 400 310" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="Structural equation model showing pathways driving trait variation in deciduous and evergreen shrub species in Western Himalayan forests"
+             style="width:100%;background:var(--color-surface-2);border-radius:var(--radius-md) var(--radius-md) 0 0">
+          <defs>
+            <marker id="pos-arr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+              <polygon points="0 0,7 2.5,0 5" fill="#437a22"/>
+            </marker>
+            <marker id="neg-arr" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+              <polygon points="0 0,7 2.5,0 5" fill="#c0392b"/>
+            </marker>
+            <style>
+              .sem-box{fill:var(--color-surface);stroke:var(--color-border);stroke-width:1.2;rx:6}
+              .sem-node{font:8.5px 'Satoshi','Inter',sans-serif;fill:var(--color-text);text-anchor:middle}
+              .sem-coef{font:7.5px 'Satoshi','Inter',sans-serif;fill:var(--color-text-muted)}
+              .sem-r2{font:7px 'Satoshi','Inter',sans-serif;fill:var(--color-primary);font-weight:600}
+              .sem-ttl{font:10.5px 'Zodiak','Georgia',serif;fill:var(--color-text);font-style:italic}
+              .sem-sub{font:8px 'Satoshi','Inter',sans-serif;fill:var(--color-text-muted)}
+              .path-pos{stroke:#437a22;stroke-width:1.6;fill:none;marker-end:url(#pos-arr)}
+              .path-neg{stroke:#c0392b;stroke-width:1.6;fill:none;marker-end:url(#neg-arr)}
+              .path-pos-lg{stroke:#437a22;stroke-width:2.4;fill:none;marker-end:url(#pos-arr)}
+              .path-neg-lg{stroke:#c0392b;stroke-width:2.4;fill:none;marker-end:url(#neg-arr)}
+            </style>
+          </defs>
+          <!-- Title -->
+          <text x="200" y="16" text-anchor="middle" class="sem-ttl">Structural Equation Model: Evergreen Shrubs</text>
+          <text x="200" y="27" text-anchor="middle" class="sem-sub">Western Himalayan Forests · 1500–3000 m asl</text>
+
+          <!-- === EVERGREEN SEM (Singh & Verma 2025, Fig 5b) === -->
+          <!-- Boxes -->
+          <!-- Topography -->
+          <rect x="18" y="105" width="88" height="36" rx="6" fill="#eef4ee" stroke="#437a22" stroke-width="1.3"/>
+          <text x="62" y="119" class="sem-node" font-weight="600">Topography</text>
+          <text x="62" y="130" class="sem-node" font-size="7">(Elevation + Aspect)</text>
+
+          <!-- Stand Canopy Cover -->
+          <rect x="18" y="185" width="88" height="36" rx="6" fill="#eef4ee" stroke="#437a22" stroke-width="1.3"/>
+          <text x="62" y="199" class="sem-node" font-weight="600">Stand Canopy</text>
+          <text x="62" y="210" class="sem-node" font-size="7">Cover</text>
+
+          <!-- Soil PC1 -->
+          <rect x="155" y="185" width="88" height="36" rx="6" fill="#f5f0e8" stroke="#8a6a1e" stroke-width="1.3"/>
+          <text x="199" y="199" class="sem-node" font-weight="600">Soil Properties</text>
+          <text x="199" y="210" class="sem-node" font-size="7">(PC1: OC, N, P, SMC)</text>
+          <text x="199" y="224" class="sem-r2">R² = 0.73</text>
+
+          <!-- Veg PC1 -->
+          <rect x="155" y="105" width="88" height="36" rx="6" fill="#f5f0e8" stroke="#8a6a1e" stroke-width="1.3"/>
+          <text x="199" y="119" class="sem-node" font-weight="600">Vegetation</text>
+          <text x="199" y="130" class="sem-node" font-size="7">Structure (PC1)</text>
+          <text x="199" y="144" class="sem-r2">R² = 0.63</text>
+
+          <!-- Trait PC1 -->
+          <rect x="292" y="140" width="90" height="36" rx="6" fill="#fff8ee" stroke="#da7101" stroke-width="1.5"/>
+          <text x="337" y="154" class="sem-node" font-weight="600">Trait Expression</text>
+          <text x="337" y="166" class="sem-node" font-size="7">(PC1: LT, LDMC, SLA)</text>
+          <text x="337" y="180" class="sem-r2">R² = 0.50</text>
+
+          <!-- PATH ARROWS — Evergreen model (β values from paper) -->
+          <!-- Topography → Veg: β = –0.92 (strong negative) -->
+          <path d="M106,117 L155,117" class="path-neg-lg"/>
+          <text x="128" y="113" class="sem-coef" text-anchor="middle" fill="#c0392b">β=–0.92***</text>
+
+          <!-- Stand Canopy → Veg: β = +0.99 (very strong positive) -->
+          <path d="M106,195 L155,131" class="path-pos-lg"/>
+          <text x="125" y="156" class="sem-coef" text-anchor="middle" fill="#437a22">β=+0.99***</text>
+
+          <!-- Topography → Soil: β = +0.73 -->
+          <path d="M62,141 C62,162 140,180 155,196" class="path-pos"/>
+          <text x="88" y="172" class="sem-coef" fill="#437a22">β=+0.73***</text>
+
+          <!-- Stand Canopy → Soil: β = –0.19 -->
+          <path d="M106,203 L155,203" class="path-neg"/>
+          <text x="128" y="199" class="sem-coef" text-anchor="middle" fill="#c0392b">β=–0.19*</text>
+
+          <!-- Topography → Trait: β = +0.38 -->
+          <path d="M106,120 C200,100 270,138 292,152" class="path-pos"/>
+          <text x="210" y="103" class="sem-coef" fill="#437a22">β=+0.38***</text>
+
+          <!-- Veg → Trait: β = +0.48 -->
+          <path d="M243,123 L292,152" class="path-pos"/>
+          <text x="272" y="132" class="sem-coef" fill="#437a22">β=+0.48***</text>
+
+          <!-- Stand Canopy → Trait: β = –0.96 (strong) -->
+          <path d="M106,200 C190,220 260,185 292,165" class="path-neg-lg"/>
+          <text x="205" y="228" class="sem-coef" text-anchor="middle" fill="#c0392b">β=–0.96***</text>
+
+          <!-- Legend -->
+          <line x1="20" y1="264" x2="45" y2="264" stroke="#437a22" stroke-width="2.4" marker-end="url(#pos-arr)"/>
+          <text x="48" y="268" class="sem-sub">Positive path</text>
+          <line x1="130" y1="264" x2="155" y2="264" stroke="#c0392b" stroke-width="2.4" marker-end="url(#neg-arr)"/>
+          <text x="158" y="268" class="sem-sub">Negative path</text>
+          <text x="245" y="268" class="sem-sub">* p&lt;0.05  *** p&lt;0.001</text>
+          <text x="20" y="282" class="sem-sub">Arrow thickness ∝ |β|. R² values shown inside target boxes.</text>
+          <text x="20" y="296" class="sem-sub" font-style="italic">Fisher's C statistic n.s. (p&gt;0.05): model fits data.</text>
+        </svg>
+        <div class="figure-card-body">
+          <p class="figure-caption"><strong>Figure 2.</strong> Structural equation model (SEM) for evergreen shrubs showing direct and indirect pathways from Topography and Stand Canopy Cover to Trait Expression (PC1: LT, LDMC, SLA). Topography (β=–0.92) and Canopy Cover (β=+0.99) together explain 63% of vegetation structure variation. Trait expression R²=0.50. Arrow thickness is proportional to path coefficient magnitude.</p>
+          <p class="figure-source">After Singh &amp; Verma (2025). <em>Ecological Indicators</em>, 178, 114000. Fig. 5b.</p>
+        </div>
+      </div>
+
+      <!-- FIGURE 3: Violin plots — Singh, Frontiers in Forests & Global Change 2021, Fig 2 -->
+      <div class="figure-card reveal">
+        <svg viewBox="0 0 400 290" xmlns="http://www.w3.org/2000/svg" role="img"
+             aria-label="Violin plots showing variation in plant functional traits SLA, crown cover and microbial biomass carbon across three disturbance intensity classes LDI MDI1 MDI2"
+             style="width:100%;background:var(--color-surface-2);border-radius:var(--radius-md) var(--radius-md) 0 0">
+          <defs>
+            <style>
+              .vio-ax{stroke:var(--color-divider);stroke-width:0.9}
+              .vio-lbl{font:8.5px 'Satoshi','Inter',sans-serif;fill:var(--color-text-muted)}
+              .vio-ttl{font:10.5px 'Zodiak','Georgia',serif;fill:var(--color-text);font-style:italic}
+              .vio-sig{font:8px 'Satoshi','Inter',sans-serif;fill:var(--color-text)}
+            </style>
+          </defs>
+          <!-- Title -->
+          <text x="200" y="16" text-anchor="middle" class="vio-ttl">Plant Trait &amp; Soil Microbial Variation by Disturbance Class</text>
+          <text x="200" y="26" text-anchor="middle" class="vio-lbl" font-size="7.5">Temperate forests, Western Himalaya · Singh (2021) Fig. 2</text>
+
+          <!-- Panel 1: SLA -->
+          <text x="75" y="42" text-anchor="middle" class="vio-lbl" font-weight="600">SLA (cm² g⁻¹)</text>
+          <!-- Y axis panel 1 -->
+          <line x1="28" y1="48" x2="28" y2="165" class="vio-ax"/>
+          <line x1="28" y1="165" x2="128" y2="165" class="vio-ax"/>
+          <text x="24" y="168" text-anchor="end" class="vio-lbl" font-size="7">5</text>
+          <text x="24" y="137" text-anchor="end" class="vio-lbl" font-size="7">15</text>
+          <text x="24" y="107" text-anchor="end" class="vio-lbl" font-size="7">25</text>
+          <text x="24" y="77" text-anchor="end" class="vio-lbl" font-size="7">35</text>
+          <text x="24" y="53" text-anchor="end" class="vio-lbl" font-size="7">45</text>
+          <!-- Horizontal grid lines -->
+          <line x1="28" y1="137" x2="128" y2="137" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="28" y1="107" x2="128" y2="107" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="28" y1="77" x2="128" y2="77" stroke="#e8e6e2" stroke-width="0.6"/>
+          <!-- SLA Violin LDI — low, symmetric, narrow (low SLA = conservative) -->
+          <!-- LDI: median ~12, IQR 9-15, max 22 -->
+          <path d="M44,165 C38,160 33,148 33,137 C33,126 35,115 40,109 C43,106 46,105 48,105 C50,105 53,106 56,109 C61,115 63,126 63,137 C63,148 58,160 52,165 Z"
+                fill="#1f4a2c" opacity="0.70"/>
+          <line x1="35" y1="140" x2="61" y2="140" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="48" y="178" text-anchor="middle" class="vio-lbl">LDI</text>
+          <!-- SLA Violin MDI1 — shifted up slightly -->
+          <path d="M72,165 C66,158 61,143 61,130 C61,117 63,104 68,97 C71,93 74,91 77,91 C80,91 83,93 86,97 C91,104 93,117 93,130 C93,143 88,158 82,165 Z"
+                fill="#5a8a3c" opacity="0.70"/>
+          <line x1="63" y1="132" x2="91" y2="132" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="77" y="178" text-anchor="middle" class="vio-lbl">MDI1</text>
+          <!-- SLA Violin MDI2 — highest, widest (acquisitive shift) -->
+          <path d="M99,165 C92,156 86,138 86,123 C86,108 88,91 95,82 C99,77 103,75 107,75 C111,75 115,77 119,82 C126,91 128,108 128,123 C128,138 122,156 115,165 Z"
+                fill="#a0c878" opacity="0.75"/>
+          <line x1="88" y1="120" x2="126" y2="120" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="107" y="178" text-anchor="middle" class="vio-lbl">MDI2</text>
+          <!-- ANOVA annotation SLA -->
+          <text x="75" y="198" text-anchor="middle" class="vio-sig" font-size="7.5">F = 8.2,  p &lt; 0.001***</text>
+
+          <!-- Panel 2: Crown Cover (CC) — decreases with disturbance -->
+          <text x="210" y="42" text-anchor="middle" class="vio-lbl" font-weight="600">Crown Cover (%)</text>
+          <line x1="158" y1="48" x2="158" y2="165" class="vio-ax"/>
+          <line x1="158" y1="165" x2="262" y2="165" class="vio-ax"/>
+          <text x="154" y="168" text-anchor="end" class="vio-lbl" font-size="7">20</text>
+          <text x="154" y="135" text-anchor="end" class="vio-lbl" font-size="7">40</text>
+          <text x="154" y="103" text-anchor="end" class="vio-lbl" font-size="7">60</text>
+          <text x="154" y="71" text-anchor="end" class="vio-lbl" font-size="7">80</text>
+          <text x="154" y="53" text-anchor="end" class="vio-lbl" font-size="7">90</text>
+          <line x1="158" y1="135" x2="262" y2="135" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="158" y1="103" x2="262" y2="103" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="158" y1="71" x2="262" y2="71" stroke="#e8e6e2" stroke-width="0.6"/>
+          <!-- CC LDI — high CC, tall violin -->
+          <path d="M174,165 C168,158 163,143 163,68 C163,55 168,50 174,50 C180,50 185,55 185,68 C185,143 180,158 174,165 Z"
+                fill="#1f4a2c" opacity="0.70"/>
+          <line x1="164" y1="72" x2="184" y2="72" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="174" y="178" text-anchor="middle" class="vio-lbl">LDI</text>
+          <!-- CC MDI1 — moderate -->
+          <path d="M207,165 C199,155 193,138 193,110 C193,90 197,80 202,76 C204,74 207,73 210,73 C213,73 216,74 218,76 C223,80 227,90 227,110 C227,138 221,155 213,165 Z"
+                fill="#5a8a3c" opacity="0.70"/>
+          <line x1="195" y1="112" x2="225" y2="112" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="210" y="178" text-anchor="middle" class="vio-lbl">MDI1</text>
+          <!-- CC MDI2 — lowest CC due to lopping -->
+          <path d="M244,165 C237,152 232,132 232,118 C232,104 236,96 240,92 C242,90 244,89 247,89 C250,89 252,90 254,92 C258,96 262,104 262,118 C262,132 257,152 250,165 Z"
+                fill="#a0c878" opacity="0.75"/>
+          <line x1="234" y1="125" x2="260" y2="125" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="247" y="178" text-anchor="middle" class="vio-lbl">MDI2</text>
+          <text x="210" y="198" text-anchor="middle" class="vio-sig" font-size="7.5">F = 11.6,  p &lt; 0.001***</text>
+
+          <!-- Panel 3: MBC — decreases with disturbance -->
+          <text x="340" y="42" text-anchor="middle" class="vio-lbl" font-weight="600">MBC (µg g⁻¹ soil)</text>
+          <line x1="288" y1="48" x2="288" y2="165" class="vio-ax"/>
+          <line x1="288" y1="165" x2="395" y2="165" class="vio-ax"/>
+          <text x="284" y="168" text-anchor="end" class="vio-lbl" font-size="7">100</text>
+          <text x="284" y="135" text-anchor="end" class="vio-lbl" font-size="7">200</text>
+          <text x="284" y="103" text-anchor="end" class="vio-lbl" font-size="7">300</text>
+          <text x="284" y="71" text-anchor="end" class="vio-lbl" font-size="7">400</text>
+          <text x="284" y="55" text-anchor="end" class="vio-lbl" font-size="7">450</text>
+          <line x1="288" y1="135" x2="395" y2="135" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="288" y1="103" x2="395" y2="103" stroke="#e8e6e2" stroke-width="0.6"/>
+          <line x1="288" y1="71" x2="395" y2="71" stroke="#e8e6e2" stroke-width="0.6"/>
+          <!-- MBC LDI — highest, narrow high violin -->
+          <path d="M306,165 C299,156 294,138 294,80 C294,62 300,54 306,54 C312,54 318,62 318,80 C318,138 313,156 306,165 Z"
+                fill="#1f4a2c" opacity="0.70"/>
+          <line x1="295" y1="78" x2="317" y2="78" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="306" y="178" text-anchor="middle" class="vio-lbl">LDI</text>
+          <!-- MBC MDI1 — lowest -->
+          <path d="M338,165 C330,150 325,128 325,115 C325,102 329,95 334,92 C336,90 338,89 340,89 C342,89 344,90 346,92 C351,95 355,102 355,115 C355,128 350,150 342,165 Z"
+                fill="#5a8a3c" opacity="0.70"/>
+          <line x1="327" y1="120" x2="353" y2="120" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="340" y="178" text-anchor="middle" class="vio-lbl">MDI1</text>
+          <!-- MBC MDI2 — intermediate -->
+          <path d="M371,165 C364,155 358,135 358,118 C358,101 363,91 368,88 C370,86 372,85 374,85 C376,85 378,86 380,88 C385,91 390,101 390,118 C390,135 384,155 377,165 Z"
+                fill="#a0c878" opacity="0.75"/>
+          <line x1="360" y1="115" x2="388" y2="115" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          <text x="374" y="178" text-anchor="middle" class="vio-lbl">MDI2</text>
+          <text x="340" y="198" text-anchor="middle" class="vio-sig" font-size="7.5">F = 14.1,  p &lt; 0.001***</text>
+
+          <!-- Shared legend -->
+          <rect x="28" y="212" width="10" height="10" fill="#1f4a2c" opacity="0.8" rx="2"/>
+          <text x="41" y="221" class="vio-lbl">LDI — Low disturbance</text>
+          <rect x="155" y="212" width="10" height="10" fill="#5a8a3c" opacity="0.8" rx="2"/>
+          <text x="168" y="221" class="vio-lbl">MDI1 — Moderate 1</text>
+          <rect x="280" y="212" width="10" height="10" fill="#a0c878" opacity="0.8" rx="2"/>
+          <text x="293" y="221" class="vio-lbl">MDI2 — Moderate 2</text>
+          <!-- White median line explanation -->
+          <line x1="28" y1="233" x2="50" y2="233" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="28" y="228" width="22" height="10" fill="#5a8a3c" opacity="0.4" rx="2"/>
+          <line x1="28" y1="233" x2="50" y2="233" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <text x="54" y="237" class="vio-lbl">White bar = median. Violin width ∝ data density.</text>
+          <text x="54" y="249" class="vio-lbl">↑ SLA with disturbance = shift to acquisitive strategy.</text>
+          <text x="54" y="261" class="vio-lbl">MBC greatest in LDI: intact litter inputs → soil C accumulation.</text>
+        </svg>
+        <div class="figure-card-body">
+          <p class="figure-caption"><strong>Figure 3.</strong> Violin plots showing variation in specific leaf area (SLA), crown cover (CC), and microbial biomass carbon (MBC) across three disturbance intensity classes in temperate forests of western Himalaya. SLA increases with disturbance (acquisitive shift), CC decreases due to lopping, and MBC is highest in undisturbed (LDI) plots reflecting intact litter and carbon accumulation. All differences significant at p &lt; 0.001 (one-way ANOVA).</p>
+          <p class="figure-source">After Singh (2021). <em>Frontiers in Forests and Global Change</em>, 4, 710658. Fig. 2.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- METHODS STRIP -->
+<div class="methods-strip" role="region" aria-label="Analytical methods and software">
+  <div class="container">
+    <p class="section-eyebrow">Analytical toolkit</p>
+    <h2 class="section-title">Methods &amp; Software</h2>
+    <div class="methods-grid">
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        <div class="method-name">Trait-Based Modelling</div>
+        <div class="method-desc">Plant-FATE &amp; Plant model calibration, intraspecific trait variation, size distribution prediction</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <div class="method-name">Multivariate Ordination</div>
+        <div class="method-desc">CCA, NMDS (vegan R), PERMANOVA, PCA, variance partitioning</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/><rect x="2" y="4" width="3" height="3" rx="1"/><rect x="2" y="10" width="3" height="3" rx="1"/><rect x="2" y="16" width="3" height="3" rx="1"/></svg>
+        <div class="method-name">Metagenomics</div>
+        <div class="method-desc">Illumina MiSeq 16S V3–V4 sequencing, QIIME/MOTHUR/KRAKEN-BRACKEN OTU workflows</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+        <div class="method-name">Remote Sensing &amp; GIS</div>
+        <div class="method-desc">ArcGIS, QGIS, R-spatial; carbon forestry; IIRS certified in RS &amp; GIS</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+        <div class="method-name">Phytosociology</div>
+        <div class="method-desc">IVI, Shannon–Wiener H′, density–diameter curves, regeneration pattern analysis</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        <div class="method-name">Soil Analysis</div>
+        <div class="method-desc">Walkley–Black OC, Kjeldahl N, chloroform fumigation MBC/MBN, Bouyoucos texture</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <div class="method-name">R &amp; Python</div>
+        <div class="method-desc">ggplot2, vegan, factoextra, imputeTs, corrplot; SPSS; Plant-FATE calibration</div>
+      </div>
+      <div class="method-card reveal">
+        <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+        <div class="method-name">Ecosystem Services</div>
+        <div class="method-desc">Supply–demand–value frameworks, management-scenario decomposition, priority conservation mapping</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section" aria-labelledby="pub-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Peer-reviewed output</p>
+    <h2 class="section-title reveal" id="pub-title">Publications</h2>
+
+    <div class="pub-list">
+      <div class="pub-year-group reveal">
+        <div class="pub-year">2024</div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Assessing the influence of invasion of <em>Lantana camara</em> on vegetation attributes and soil properties across varied disturbance gradients in semi-arid forests of Aravali hills, Delhi</p>
+            <p class="pub-meta">Hansda, P., Kumar, S., <strong>Singh, S.</strong>, Garkoti, S.C. &bull; <span class="pub-journal">Plant Ecology</span>, 1–14.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year-group reveal">
+        <div class="pub-year">2023</div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Species identity and resource availability explain variation among above and below-ground functional traits in Himalayan temperate forests</p>
+            <p class="pub-meta"><strong>Singh, S.</strong>, Verma, A.K., Garkoti, S.C. &bull; <span class="pub-journal">Flora</span>, 306, 152363.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--book">Edited</span>
+          <div>
+            <p class="pub-title">Understanding Soils of Mountainous Landscapes: Sustainable Use of Soil Ecosystem Services and Management</p>
+            <p class="pub-meta">Bhadouria, R., <strong>Singh, S.</strong>, Tripathi, S., Singh, P. (Eds.) &bull; <span class="pub-journal">Elsevier</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year-group reveal">
+        <div class="pub-year">2021</div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Low to moderate level forest disturbance effects on plant functional traits and associated soil microbial diversity in western Himalaya</p>
+            <p class="pub-meta"><strong>Singh, S.</strong> &bull; <span class="pub-journal">Frontiers in Forests and Global Change</span>, 107.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Fine root production and nutrient dynamics in relation to stand characteristics of chir pine mixed banj oak forests in central Himalaya</p>
+            <p class="pub-meta">Verma, A.K., Garkoti, S.C., <strong>Singh, S.</strong>, Kumar, S., Kumar, M. &bull; <span class="pub-journal">Flora</span>, 279, 151808.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--chapter">Chapter</span>
+          <div>
+            <p class="pub-title">Phytoremediation potential of invasive species growing in mining dumpsite</p>
+            <p class="pub-meta"><strong>Singh, S.</strong>, Saha, L., Kumar, M., Bauddh, K. &bull; In: <em>Phytorestoration of Abandoned Mining and Oil Drilling Sites</em>, pp. 287–305. <span class="pub-journal">Elsevier</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year-group reveal">
+        <div class="pub-year">2020</div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--chapter">Chapter</span>
+          <div>
+            <p class="pub-title">Plant Functional Traits in Tropical Dry Forests: A Review</p>
+            <p class="pub-meta"><strong>Singh, S.</strong>, Verma, A.K. &bull; In: <em>Handbook of Research on the Conservation and Restoration of Tropical Dry Forests</em>, pp. 66–88. <span class="pub-journal">IGI Global</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-year-group reveal">
+        <div class="pub-year">2018</div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Understanding the role of slope aspect in shaping the vegetation attributes and soil properties in Montane ecosystems</p>
+            <p class="pub-meta"><strong>Singh, S.</strong> &bull; <span class="pub-journal">Tropical Ecology</span>, 59(3), 417–430.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Biomass and carbon stocks in different forest types of Western Himalaya</p>
+            <p class="pub-meta"><strong>Singh, S.</strong>, Verma, A.K. &bull; <span class="pub-journal">Tropical Ecology</span>, 59(4), 647–658.</p>
+          </div>
+        </div>
+        <div class="pub-item">
+          <span class="pub-type pub-type--article">Article</span>
+          <div>
+            <p class="pub-title">Recent development on sustainable biodiesel production using sewage sludge</p>
+            <p class="pub-meta">Srivastava, N. et al. (incl. <strong>Singh, S.</strong>) &bull; <span class="pub-journal">3 Biotech</span>, 8(5), 245.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE TIMELINE -->
+<section id="experience" class="section section-alt" aria-labelledby="exp-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Career &amp; training history</p>
+    <h2 class="section-title reveal" id="exp-title">Experience</h2>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <div class="tl-period">2023 – Present</div>
+        <div class="tl-role">IIASA Postdoctoral Fellow</div>
+        <div class="tl-org">International Institute for Applied Systems Analysis (IIASA), Laxenburg, Austria</div>
+        <div class="tl-desc">Response of Forest Ecosystem Services along environmental gradients in the Himalayas. Decomposing management-based scenarios and identifying priority conservation areas. Supervisors: Jaideep Joshi &amp; Florian Hofhansl.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">Jun – Aug 2022</div>
+        <div class="tl-role">Young Scientist Programme</div>
+        <div class="tl-org">IIASA, Laxenburg, Austria</div>
+        <div class="tl-desc">Trait-based modelling in temperate forests of Western Himalaya, India. Calibrated Plant and Plant-FATE vegetation models. Supervisors: Åke Brännström, Jaideep Joshi &amp; Florian Hofhansl.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">2017 – 2022</div>
+        <div class="tl-role">Doctoral Researcher (PhD)</div>
+        <div class="tl-org">School of Environmental Sciences, Jawaharlal Nehru University, New Delhi</div>
+        <div class="tl-desc">Dissertation: "Functional Traits of Woody Plants in Temperate Forests of Western Himalaya." Designed and executed field campaigns across 400–3000 m elevation in Sirmour district, HP. Supervised by Prof. S.C. Garkoti &amp; Prof. K.G. Saxena.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">May 2022</div>
+        <div class="tl-role">Guest Lecturer, Environmental Sciences</div>
+        <div class="tl-org">Jesus and Mary College, University of Delhi</div>
+        <div class="tl-desc">Invited teaching appointment in Environmental Sciences.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-period">Jan – May 2015</div>
+        <div class="tl-role">Research Intern — Biodiesel Engineering</div>
+        <div class="tl-org">Department of Chemical Engineering &amp; Technology, IIT-BHU, Varanasi</div>
+        <div class="tl-desc">Six-month dissertation on production of biodiesel from sewage sludge under Prof. P.K. Mishra.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" aria-labelledby="edu-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Academic training</p>
+    <h2 class="section-title reveal" id="edu-title">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-period">2017 – 2022</div>
+        <div class="edu-degree">Doctor of Philosophy (PhD)</div>
+        <div class="edu-inst">School of Environmental Sciences, Jawaharlal Nehru University, New Delhi</div>
+        <div class="edu-diss">Functional Traits of Woody Plants in Temperate Forests of Western Himalaya</div>
+        <div class="edu-supervisors">Supervisors: Prof. S.C. Garkoti (primary); Prof. K.G. Saxena (co-supervisor)</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2015 – 2017</div>
+        <div class="edu-degree">Master of Philosophy (MPhil)</div>
+        <div class="edu-inst">School of Environmental Sciences, JNU, New Delhi</div>
+        <div class="edu-diss">The Effect of Slope Aspects on Vegetation Structure and Composition and Soil Physico-chemical properties in Western Himalayas</div>
+        <div class="edu-supervisors">Supervisor: Prof. K.G. Saxena</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2013 – 2015</div>
+        <div class="edu-degree">Master of Sciences (MSc)</div>
+        <div class="edu-inst">Department of Botany, Banaras Hindu University, Varanasi</div>
+        <div class="edu-diss">Subject: Environmental Sciences</div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-period">2010 – 2013</div>
+        <div class="edu-degree">Bachelor of Sciences (BSc)</div>
+        <div class="edu-inst">Mahila Mahavidyalaya, Banaras Hindu University, Varanasi</div>
+        <div class="edu-diss">Subject: Zoology (Hons.), BZC Group</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS & GRANTS -->
+<section class="section section-alt" aria-labelledby="awards-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Recognition &amp; support</p>
+    <h2 class="section-title reveal" id="awards-title">Awards &amp; Grants</h2>
+    <div class="awards-grid">
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        <div class="award-text">
+          <strong>IIASA Young Scientist Summer Program 2021</strong>
+          Selected for YSSP 2021, Austria
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <div class="award-text">
+          <strong>BES Travel Grant 2021</strong>
+          British Ecological Society Annual Meeting, Liverpool, UK
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <div class="award-text">
+          <strong>Austin Travel Grant 2020</strong>
+          AGU Fall Meeting 2020
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+        <div class="award-text">
+          <strong>International Summer School Scholarship 2018</strong>
+          One of four candidates worldwide — Methods in Forest Ecology, Pavia, Italy
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v5"/><path d="M15 4v5"/></svg>
+        <div class="award-text">
+          <strong>Best Poster Award 2018</strong>
+          National Conference on Recent Advances in Environmental Sciences, SES JNU, New Delhi
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <div class="award-text">
+          <strong>UGC-NET JRF 2018 — 99.89th percentile</strong>
+          Junior Research Fellowship &amp; Assistant Professor eligibility, Environmental Science
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <div class="award-text">
+          <strong>GATE 2019 Qualified</strong>
+          Graduate Aptitude Test in Engineering — Ecology &amp; Evolution
+        </div>
+      </div>
+      <div class="award-item reveal">
+        <svg class="award-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v5"/><path d="M15 4v5"/></svg>
+        <div class="award-text">
+          <strong>ASRB-NET Qualified 2015</strong>
+          National Eligibility Test, Environmental Science
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" aria-labelledby="contact-title">
+  <div class="container">
+    <p class="section-eyebrow reveal">Get in touch</p>
+    <h2 class="section-title reveal" id="contact-title">Contact &amp; References</h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="section-body">I welcome enquiries about collaborative research, seminar invitations, and opportunities in forest ecosystem ecology, trait-based modelling, and Himalayan biodiversity science.</p>
+        <div class="contact-links" style="margin-top:var(--space-6)">
+          <a href="mailto:singhs@iiasa.ac.at" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            singhs@iiasa.ac.at
+          </a>
+          <a href="mailto:shiprasinghjnu@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            shiprasinghjnu@gmail.com
+          </a>
+          <a href="https://orcid.org/0000-0001-9317-8286" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zM7.8 4.8c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9zm-.6 2.8h1.2v9.8H7.2V7.6zm4 0h3.4c3.1 0 4.5 2.2 4.5 4.9 0 2.7-1.5 4.9-4.7 4.9h-3.2V7.6zm1.2 1.1v7.6h2c2.2 0 3.3-1.5 3.3-3.8S16.7 8.7 14.4 8.7h-2z"/></svg>
+            ORCID 0000-0001-9317-8286
+          </a>
+          <a href="https://pure.iiasa.ac.at" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            IIASA PURE Profile
+          </a>
+        </div>
+      </div>
+      <div class="reveal">
+        <h3 style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:400;margin-bottom:var(--space-2)">References</h3>
+        <div class="ref-list">
+          <div class="ref-item">
+            <span class="ref-name">Prof. S.C. Garkoti</span>
+            <span class="ref-title">Professor, School of Environmental Sciences, Jawaharlal Nehru University, New Delhi</span>
+            <span class="ref-email">sgarkoti@yahoo.com</span>
+          </div>
+          <div class="ref-item">
+            <span class="ref-name">Prof. K.G. Saxena</span>
+            <span class="ref-title">Professor, School of Environmental Sciences, Jawaharlal Nehru University, New Delhi</span>
+            <span class="ref-email">kgsaxena@mail.jnu.ac.in</span>
+          </div>
+          <div class="ref-item">
+            <span class="ref-name">Dr. Jaideep Joshi</span>
+            <span class="ref-title">Assistant Professor, Centre of Climate Studies, IIT Bombay, Mumbai</span>
+            <span class="ref-email">joshi@iiasa.ac.at</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p class="footer-copy">© 2025 Shipra Singh. IIASA Postdoctoral Fellow.</p>
+    <p class="footer-copy">Languages: English (proficient) · Hindi (native) · German (basic)</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';
+  r.setAttribute('data-theme',d);
+  const sun='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+  const moon='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  if(t){
+    t.innerHTML=d==='dark'?sun:moon;
+    t.addEventListener('click',()=>{
+      d=d==='dark'?'light':'dark';
+      r.setAttribute('data-theme',d);
+      t.setAttribute('aria-label','Switch to '+(d==='dark'?'light':'dark')+' mode');
+      t.innerHTML=d==='dark'?sun:moon;
+    });
+  }
+  // Scroll reveal
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}});
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  // Mobile nav
+  const menuBtn=document.getElementById('menuBtn');
+  const mobileMenu=document.getElementById('mobileMenu');
+  if(menuBtn&&mobileMenu){
+    menuBtn.addEventListener('click',()=>{
+      const open=mobileMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open);
+    });
+    document.querySelectorAll('.mobile-close').forEach(a=>{
+      a.addEventListener('click',()=>mobileMenu.classList.remove('open'));
+    });
+  }
+})();
+</script>
+</body>
+</html>
